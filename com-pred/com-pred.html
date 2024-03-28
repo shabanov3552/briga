@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<title>Document</title>
+	<style type="text/css">
+		@page {
+			margin: 0px 0px 0px 0px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.page__bottom-band {
+			width: 100%;
+			background: #A5FF14;
+			height: 11px;
+		}
+
+		.table-main {
+			width: 100%;
+			font-family: 'Montserrat';
+			background-image: url('<?= $urlServer ?>/kp_from_basket_test/img/page__bg.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom right;
+		}
+
+		.table-main__product {
+			background-image: url('<?= $urlServer ?>/kp_from_basket_test/img/page__left-bg.png');
+			background-size: 80% 60%;
+			background-repeat: no-repeat;
+			background-position: top left;
+			width: 200mm;
+			height: 242mm;
+		}
+
+		.table-main__product-wrapper {
+			background: #FFFFFF;
+			border: 1px solid #979797;
+			border-radius: 10px;
+			margin-top: 50px;
+			margin-left: 50px;
+			text-align: center;
+			width: 90%;
+			height: 80%;
+			padding-top: 50px;
+			overflow: hidden;
+		}
+
+		.table-main__product img {
+			height: 150mm;
+			max-width: 100%;
+		}
+
+		.table-info {
+			margin-top: 50px;
+			margin-left: 40px;
+		}
+
+		.page__logo {
+			display: block;
+			margin-right: 210px;
+		}
+
+		.page__header-right {
+			padding-right: 40px;
+		}
+
+		.page__link {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			text-align: right;
+			color: #3F3F3F;
+			display: block;
+		}
+
+		.green-right-block {
+			width: 12px;
+			height: 60px;
+			background: #A5FF14;
+		}
+
+		.page__title {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 26px;
+		}
+
+		.page__inner {
+			padding-right: 50px;
+			font-size: 14px;
+			line-height: 17px;
+			margin-bottom: 50px;
+		}
+
+		.page__text {}
+
+		.page__text22 {
+			margin: 0;
+			padding: 0;
+			font-size: 10px;
+		}
+
+		.table-total {
+			background-color: #F0F0F0;
+			padding: 13px 20px;
+			border-radius: 5px;
+		}
+
+		.table-total-inner {
+			margin-right: 20px;
+		}
+
+		.page__total-text {
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 16px;
+			margin-bottom: 10px;
+		}
+
+		.page__total-count {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+		}
+
+		.page__footer {
+			margin-top: 40px;
+			padding: 0 40px;
+		}
+
+		.page__footer-link {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+			color: #76C000;
+			display: block;
+			margin-bottom: 7px;
+		}
+
+		.page__footer-text {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			color: #3F3F3F;
+			margin-bottom: 5px;
+		}
+
+		.table-main__product-wrapper {}
+
+		.page__bottom-band {}
+	</style>
+</head>
+
+<body>
+	<table class="table-main" cellpadding="0" cellspacing="0" border="0" style="page-break-after:always;">
+		<tbody>
+			<tr>
+				<td valign="top" class="table-main__product">
+					<div class="table-main__product-wrapper"><img src="<?= $urlServer ?><?= CFile::GetPath($item[" filds"]["DETAIL_PICTURE"]) ?>" alt=""></div>
+				</td>
+				<td valign="top">
+					<table class="table-info">
+						<tbody>
+							<tr>
+								<td>
+									<a href="" class="page__logo" style=""><img src="<?= $urlServer ?>/kp_from_basket_test/img/logo.png" alt=""></a>
+								</td>
+								<td>
+									<div class="page__header-right">
+										<a href="tel:+73912179009" class="page__link">+7 (391) 217-90-09</a>
+										<a href="mailto:24@24-spec.ru" class="page__link">24@24-spec.ru</a>
+										<a href="http://24-spec.ru" class="page__link">24-spec.ru</a>
+									</div>
+								</td>
+								<td width="12">
+									<div class="green-right-block"></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<h2 class="page__title">
+										<?= $item["filds"]["NAME"] ?>
+									</h2>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<div class="page__inner">
+
+										<?
+										$itemval = 0;
+
+										foreach ($item["props"] as $key => $value) {
+											 if ($value["PROPERTY_TYPE"] == 'F') {
+												  continue;
+											 }
+											 if ($value["VALUE"] ==  "") {
+												  continue;
+											 }
+											 if (strpos($value["CODE"], 'CML2') !== false) {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_PREW_TEXT") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_POLNOE_OPISANIE") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_DETAL_TEXT") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_REKOMENDATSII_PO_UKHODU") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_PROIZVODITEL_BREND" and !$USER->IsAdmin()) {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_ZASHCHITNYE_SVOYSTVA") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_SOSTAV") {
+												  continue;
+											 }
+											 if (strpos($value["CODE"], 'BX') !==  0) {
+												  continue;
+											 }
+
+											 $itemval++;
+										}
+
+										if($itemval > 10){
+											 $classCSS = "page__text22";
+										}else{
+											 $classCSS = "";
+										}
+
+										foreach ($item["props"] as $key => $value) {
+											 if ($value["PROPERTY_TYPE"] == 'F') {
+												  continue;
+											 }
+											 if ($value["VALUE"] ==  "") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "CML2_MANUFACTURER" and $USER->IsAdmin()) {
+												  ?>
+										<p class="page__text <?=$classCSS?>"><b>
+												<?= $value["NAME"] ?>:
+											</b>
+											<? if (is_array($valueItem)) : ?>
+											<? foreach ($valueItem as $key => $value) { ?>
+											<?= $value ?>
+											<? } ?>
+											<? else : ?>
+											<?= $valueItem ?>
+											<? endif; ?>
+										</p>
+										<?
+											 }
+											 if (strpos($value["CODE"], 'CML2') !== false) {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_PREW_TEXT") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_POLNOE_OPISANIE") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_DETAL_TEXT") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_REKOMENDATSII_PO_UKHODU") {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_PROIZVODITEL_BREND" and !$USER->IsAdmin()) {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_ZASHCHITNYE_SVOYSTVA") {
+												  continue;
+											 }
+											 if (strpos($value["CODE"], 'BX') !==  0) {
+												  continue;
+											 }
+											 if ($value["CODE"] == "BX_SOSTAV") {
+												  continue;
+											 }
+
+											 $valueItem = str_replace("||", "<br>", $value["VALUE"]);
+											 $valueItem = str_replace("¶", "<br>", $valueItem);
+											 ?>
+										<p class="page__text <?=$classCSS?>"><b>
+												<?= $value["NAME"] ?>:
+											</b>
+											<? if (is_array($valueItem)) : ?>
+											<? foreach ($valueItem as $key => $value) { ?>
+											<?= $value ?>
+											<? } ?>
+											<? else : ?>
+											<?= $valueItem ?>
+											<? endif; ?>
+										</p>
+										<? } ?>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<table class="table-total">
+										<tbody>
+											<?
+										$allSumm = 0;
+										foreach ($item["sku"] as $skuItem){?>
+											<tr>
+												<td>
+													<div class="table-total-inner">
+														<div class="page__total-text">Размер</div>
+														<div class="page__total-count">
+															<?= $skuItem["name_size"] ?>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="table-total-inner">
+														<div class="page__total-text">Кол-во</div>
+														<div class="page__total-count">
+															<?= $skuItem["quantity"]?>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="table-total-inner">
+														<div class="page__total-text">Цена с НДС</div>
+														<div class="page__total-count">
+															<?= $skuItem["price"]?>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="table-total-inner">
+														<div class="page__total-text">Сумма с НДС</div>
+														<div class="page__total-count">
+															<?= $skuItem["sum"]?>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<?
+
+											 $allSumm = $allSumm + $skuItem["sum2"];
+										}
+										?>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<table class="table-total" style="background: #A5FF14;">
+										<tbody>
+											<tr>
+												<td>
+													<div class="table-total-inner">
+														<div class="page__total-text"></div>
+														<div class="page__total-count">Итог с НДС</div>
+													</div>
+												</td>
+												<td>
+													<div class="table-total-inner">
+														<div class="page__total-text"></div>
+														<div class="page__total-count">
+															<?=$allSumm?> &#8381;
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=" 2">
+					<div class="page__footer" style="">
+						<a href="" class="page__footer-link">
+							<?= $urlServer2 ?>
+							<?= $ar_filds["DETAIL_PAGE_URL"] ?>
+						</a>
+						<div class="page__footer-text">ООО «Бригадир» 660055, г. Красноярск, ул. Джамбульская, 16, ст. 2 оф. 3-50 ИНН: 2465146655 КПП: 246501001 ОГРН: 1162468081522 СИБИРСКИЙ ФИЛИАЛ ПАО РОСБАНК БИК: 040407388 Р/с: 40702810675310002487. К/с: 30101810000000000388</div>
+					</div>
+					<div class="page__bottom-band"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>
+
+<table class="table-main" cellpadding="0" cellspacing="0" border="0" style="page-break-after:always;">
+	<tbody>
+		<tr>
+			<td valign="top" class="table-main__product">
+				<div class="table-main__product-wrapper"><img src="<?= $urlServer ?><?= CFile::GetPath($item[" filds"]["DETAIL_PICTURE"]) ?>" alt=""></div>
+			</td>
+			<!-- характеристики и размеры с ценами-->
+			<td valign="top">
+				<table class="table-info">
+					<tbody>
+						<tr>
+							<td>
+								<a href="" class="page__logo" style=""><img src="<?= $urlServer ?>/kp_from_basket_test/img/logo.png" alt=""></a>
+							</td>
+							<td>
+								<div class="page__header-right">
+									<a href="tel:+73912179009" class="page__link">+7 (391) 217-90-09</a>
+									<a href="mailto:24@24-spec.ru" class="page__link">24@24-spec.ru</a>
+									<a href="http://24-spec.ru" class="page__link">24-spec.ru</a>
+								</div>
+							</td>
+							<td width="12">
+								<div class="green-right-block"></div>
+							</td>
+						</tr>
+						<tr>
+							<!-- Название товара -->
+							<td colspan="3">
+								<h2 class="page__title">
+									<?= $item["filds"]["NAME"] ?>
+								</h2>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<div class="page__inner">
+
+									<?
+													  $itemval = 0;
+
+													  foreach ($item["props"] as $key => $value) {
+															if ($value["PROPERTY_TYPE"] == 'F') {
+																 continue;
+															}
+															if ($value["VALUE"] ==  "") {
+																 continue;
+															}
+															if (strpos($value["CODE"], 'CML2') !== false) {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_PREW_TEXT") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_POLNOE_OPISANIE") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_DETAL_TEXT") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_REKOMENDATSII_PO_UKHODU") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_PROIZVODITEL_BREND" and !$USER->IsAdmin()) {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_ZASHCHITNYE_SVOYSTVA") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_SOSTAV") {
+																 continue;
+															}
+															if (strpos($value["CODE"], 'BX') !==  0) {
+																 continue;
+															}
+
+															$itemval++;
+													  }
+
+													  if ($itemval > 10) {
+															$classCSS = "page__text22";
+													  } else {
+															$classCSS = "";
+													  }
+
+													  foreach ($item["props"] as $key => $value) {
+															if ($value["PROPERTY_TYPE"] == 'F') {
+																 continue;
+															}
+															if ($value["VALUE"] ==  "") {
+																 continue;
+															}
+															if ($value["CODE"] == "CML2_MANUFACTURER" and $USER->IsAdmin()) {
+													  ?>
+									<p class="page__text <?= $classCSS ?>"><b>
+											<?= $value["NAME"] ?>:
+										</b>
+										<? if (is_array($valueItem)) : ?>
+										<? foreach ($valueItem as $key => $value) { ?>
+										<?= $value ?>
+										<? } ?>
+										<? else : ?>
+										<?= $valueItem ?>
+										<? endif; ?>
+									</p>
+									<?
+															}
+															if (strpos($value["CODE"], 'CML2') !== false) {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_PREW_TEXT") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_POLNOE_OPISANIE") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_DETAL_TEXT") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_REKOMENDATSII_PO_UKHODU") {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_PROIZVODITEL_BREND" and !$USER->IsAdmin()) {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_ZASHCHITNYE_SVOYSTVA") {
+																 continue;
+															}
+															if (strpos($value["CODE"], 'BX') !==  0) {
+																 continue;
+															}
+															if ($value["CODE"] == "BX_SOSTAV") {
+																 continue;
+															}
+
+															$valueItem = str_replace("||", "<br>", $value["VALUE"]);
+															$valueItem = str_replace("¶", "<br>", $valueItem);
+															?>
+									<p class="page__text <?= $classCSS ?>"><b>
+											<?= $value["NAME"] ?>:
+										</b>
+										<? if (is_array($valueItem)) : ?>
+										<? foreach ($valueItem as $key => $value) { ?>
+										<?= $value ?>
+										<? } ?>
+										<? else : ?>
+										<?= $valueItem ?>
+										<? endif; ?>
+									</p>
+									<? } ?>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<table class="table-total">
+									<tbody>
+										<?
+															$allSumm = 0;
+															foreach ($item["sku"] as $skuItem) { ?>
+										<tr>
+											<td>
+												<div class="table-total-inner">
+													<div class="page__total-text">Размер</div>
+													<div class="page__total-count">
+														<?= $skuItem["name_size"] ?>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="table-total-inner">
+													<div class="page__total-text">Кол-во</div>
+													<div class="page__total-count">
+														<?= $skuItem["quantity"] ?>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="table-total-inner">
+													<div class="page__total-text">Цена с НДС</div>
+													<div class="page__total-count">
+														<?= $skuItem["price"] ?>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="table-total-inner">
+													<div class="page__total-text">Сумма с НДС</div>
+													<div class="page__total-count">
+														<?= $skuItem["sum"] ?>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<?
+
+																 $allSumm = $allSumm + $skuItem["sum2"];
+															}
+															?>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<table class="table-total" style="background: #A5FF14;">
+									<tbody>
+										<tr>
+											<td>
+												<div class="table-total-inner">
+													<div class="page__total-text"></div>
+													<div class="page__total-count">Итог с НДС</div>
+												</div>
+											</td>
+											<td>
+												<div class="table-total-inner">
+													<div class="page__total-text"></div>
+													<div class="page__total-count">
+														<?= $allSumm ?> &#8381;
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<!-- footer -->
+		<tr>
+			<td colspan=" 2">
+				<div class="page__footer" style="">
+					<a href="" class="page__footer-link">
+						<?= $urlServer2 ?>
+						<?= $ar_filds["DETAIL_PAGE_URL"] ?>
+					</a>
+					<div class="page__footer-text">ООО «Бригадир» 660055, г. Красноярск, ул. Джамбульская, 16, ст. 2 оф. 3-50 ИНН: 2465146655 КПП: 246501001 ОГРН: 1162468081522 СИБИРСКИЙ ФИЛИАЛ ПАО РОСБАНК БИК: 040407388 Р/с: 40702810675310002487. К/с: 30101810000000000388</div>
+				</div>
+				<div class="page__bottom-band"></div>
+			</td>
+		</tr>
+	</tbody>
+</table>

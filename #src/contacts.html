@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Контакты"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		@@include('_breadcrumbs.html',{})
+		<section class="contacts">
+			<div class="contacts__title main-title _container">Контакты</div>
+			<div class="contacts__first-block _container">
+				<div class="contacts__subtitle">Красноярск</div>
+				<div class="contacts__first-block-wrapper">
+					<div class="contacts__col">
+						<div class="contacts__row">
+							<div class="contacts__name">Адрес</div>
+							<div class="contacts__text">660055, Россия, Красноярский край, г. Красноярск, ул. Джамбульская, д.16, стр. 2, оф.3-50; этаж 3</div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__name">Телефон</div>
+							<div class="contacts__text">
+								+7 (391) 217-90-09</div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__name">Бухгалтерия</div>
+							<div class="contacts__text">
+								+7 (391) 217-90-09</div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__name">E-mail</div>
+							<div class="contacts__text">
+								2424242424242424@24-spec.ru</div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__name">E-mail для снабжения</div>
+							<div class="contacts__text">
+								snab@24-spec.ru</div>
+						</div>
+					</div>
+					<div class="contacts__col">
+						<div class="contacts__row">
+							<div class="contacts__name">Часы работы</div>
+							<div class="contacts__text">
+								<div class="work-hours">
+									<div class="work-hours__row">
+										<div class="work-hours__day">Пн-Чт</div>
+										<div class="work-hours__time">9:00-18:00</div>
+									</div>
+									<div class="work-hours__row">
+										<div class="work-hours__day">Пт</div>
+										<div class="work-hours__time">9:00-17:00</div>
+									</div>
+									<div class="work-hours__row">
+										<div class="work-hours__day">Сб–Вс</div>
+										<div class="work-hours__time">Выходной</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contacts__second-block _container">
+				<div class="contacts__second-block-wrapper">
+					<div class="contacts__col">
+						<div class="contacts__subtitle">Москва</div>
+						<div class="contacts__row">
+							<div class="contacts__name">Телефон</div>
+							<div class="contacts__text">7 (495) 120-43-83 доб.212</div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__name">Мобильный</div>
+							<div class="contacts__text">+7 (915) 465-12-12 </div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__name">Контакт</div>
+							<div class="contacts__text">Бояринов Дмитрий ООО «Спец-ИТ»</div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__name">E-mail</div>
+							<div class="contacts__text">bds@spets-it.ru</div>
+						</div>
+					</div>
+					<div class="contacts__col">
+						<div class="contacts__subtitle">Реквизиты</div>
+						<div class="contacts__requisites">
+							<div class="contacts__row">
+								<div class="contacts__name">Название</div>
+								<div class="contacts__text">Общество с ограниченной ответственностью ТД «Бригадир»</div>
+							</div>
+							<div class="contacts__row">
+								<div class="contacts__name">ИНН</div>
+								<div class="contacts__text">2465190439</div>
+							</div>
+							<div class="contacts__row">
+								<div class="contacts__name">Название</div>
+								<div class="contacts__text">Общество с ограниченной ответственностью ТД «Бригадир»</div>
+							</div>
+							<div class="contacts__row">
+								<div class="contacts__name">ИНН</div>
+								<div class="contacts__text">2465190439</div>
+							</div>
+							<div class="contacts__row">
+								<div class="contacts__name">Название</div>
+								<div class="contacts__text">Общество с ограниченной ответственностью ТД «Бригадир»</div>
+							</div>
+							<div class="contacts__row">
+								<div class="contacts__name">ИНН</div>
+								<div class="contacts__text">2465190439</div>
+							</div>
+							<div class="contacts__row">
+								<div class="contacts__name">Название</div>
+								<div class="contacts__text">Общество с ограниченной ответственностью ТД «Бригадир»</div>
+							</div>
+							<div class="contacts__row">
+								<div class="contacts__name">ИНН</div>
+								<div class="contacts__text">2465190439</div>
+							</div>
+						</div>
+						<button class="contacts__show-more">Раскрыть все реквизиты</button>
+						<a href="" class="contacts__download">
+							<svg class="contacts__download-svg">
+								<use xlink:href="img/svg/sprite.svg#icon_download"></use>
+							</svg>
+							<span class="contacts__download-span">Скачать реквизиты</span>
+							<span class="contacts__download-extension">PDF, 1.8 МB</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="map _container">
+			<div id="map"></div>
+		</section>
+		<section class="index-callback _container">
+			<div class="callback">
+				<div class="callback__row">
+					<div class="callback__col">
+						<div class="callback__text">Оставьте свои контактные данные и наши специалисты подберут для вас необходимые товары и сделают индивидуальное предложение</div>
+						<div class="callback__bg"></div>
+					</div>
+					<div class="callback__col">
+						<div class="callback__form">
+							<form action="" class="form">
+								<div class="form__line">
+									<input required type="text" name="form[]" data-value="Ваше имя" class="form__input">
+								</div>
+								<div class="form__line">
+									<input type="email" name="form[]" data-parsley-type="email" data-parsley-trigger="change" data-parsley-required-message="Введите ваш e-mail" data-value="E-mail" class="form__input">
+								</div>
+								<div class="form__line">
+									<input required type="tel" name="form[]" data-value="Контактный телефон" class="form__input js_phone">
+								</div>
+								<div class="form__line">
+									<textarea autocomplete="off" name="form[]" data-value="Сообщение" class="form__input"></textarea>
+								</div>
+								<div class="form__row">
+									<button type="submit" class="form__button trnt-btn">Задать вопрос</button>
+									<div class="form__checkbox">
+										<label class="checkbox">
+											<input data-error="Ошибка" class="checkbox__input" required type="checkbox" checked value="1" name="form[]">
+											<span class="checkbox__text"><span>Я даю свое согласие на <a class="js_popup-link" href="#consent">обработку персональных данных</a></span></span>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

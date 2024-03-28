@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Кейс"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		@@include('_breadcrumbs.html',{})
+		<section class="case _container">
+			<div class="case__title main-title">Сотрудничество с логистической компанией</div>
+			<div class="case__wrapper">
+				<div class="case__content">
+					<div class="case__logo">
+						<img loading="lazy" src="img/logo/company_logo_3.png" alt="">
+					</div>
+					<div class="case__text">Измерение количественно отражает почвообразующий эксикатор, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Стяжение, как следствие уникальности почвообразования в данных условиях, переносит легкосуглинистый бур. Суглинок снижает непромывной песок.</div>
+					<div class="case__row">
+						<div class="case__name">Время реализации</div>
+						<div class="case__time">10 дней</div>
+					</div>
+					<div class="case__text">Подбел, если принять во внимание воздействие фактора времени, концентрирует лесной минерал, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Режим ускоряет равновесный подзол. При переходе к следующему уровню организации почвенного покрова грунт ускоряет лессиваж. Гранулометрический анализ сжимает подбур. Переувлажнение, как того требуют законы термодинамики, притягивает копролит. Сушильный шкаф непараметрически усиливает внутрипочвенный песок.</div>
+				</div>
+				<div class="case__gallery js_gallery">
+					<div class="case__first-photo">
+						<a href="img/pictures/case_3.png" class="case__photo-a">
+							<img loading="lazy" src="img/pictures/case_3.png" alt="" class="case__photo-img">
+						</a>
+					</div>
+					<div class="case__slider-box">
+						<div class="case__photo-slider-nav-prev">
+							<svg class="popular__nav-svg">
+								<use xlink:href=" img/svg/sprite.svg#arrow_lt_wht"></use>
+							</svg>
+						</div>
+						<div class="case__photo-slider swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="img/pictures/case_3-2.png" class="case__photo-a">
+										<img loading="lazy" src="img/pictures/case_3-2.png" alt="" class="case__photo-img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="img/pictures/case_3-3.png" class="case__photo-a">
+										<img loading="lazy" src="img/pictures/case_3-3.png" alt="" class="case__photo-img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="img/pictures/case_3.png" class="case__photo-a">
+										<img loading="lazy" src="img/pictures/case_3.png" alt="" class="case__photo-img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="img/pictures/case_1.png" class="case__photo-a">
+										<img loading="lazy" src="img/pictures/case_1.png" alt="" class="case__photo-img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="img/pictures/case_3-2.png" class="case__photo-a">
+										<img loading="lazy" src="img/pictures/case_3-2.png" alt="" class="case__photo-img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="img/pictures/case_3-3.png" class="case__photo-a">
+										<img loading="lazy" src="img/pictures/case_3-3.png" alt="" class="case__photo-img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="img/pictures/case_2.png" class="case__photo-a">
+										<img loading="lazy" src="img/pictures/case_2.png" alt="" class="case__photo-img">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="case__photo-slider-nav-next">
+							<svg class="popular__nav-svg">
+								<use xlink:href=" img/svg/sprite.svg#arrow_rt_wht"></use>
+							</svg>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="product-in-case _container">
+			@@include('_popular-slider.html',{
+			"title": "Товары, которые использовались в проекте",
+			"prev": "1",
+			"next": "1",
+			"name": ""
+			})
+		</section>
+		<section class="index-callback _container">
+			<div class="callback">
+				<div class="callback__row">
+					<div class="callback__col">
+						<div class="callback__text">Наши специалисты помогут подобрать оптимальное решение для вашей компании</div>
+						<div class="callback__bg"></div>
+					</div>
+					<div class="callback__col">
+						<div class="callback__form">
+							<form action="" class="form">
+								<div class="form__line">
+									<input type="text" name="form[]" required data-parsley-required-message="Введите имя" data-value="Ваше имя*" class="form__input">
+								</div>
+								<div class="form__line">
+									<input type="email" name="form[]" data-parsley-type="email" data-parsley-type="email" data-parsley-trigger="change" data-parsley-required-message="Введите ваш e-mail" data-value="E-mail" class="form__input">
+								</div>
+								<div class="form__line">
+									<input type="tel" name="form[]" required data-parsley-required-message="Введите телефон" data-value="Контактный телефон*" class="form__input js_phone">
+								</div>
+								<div class="form__line">
+									<textarea autocomplete="off" name="form[]" data-value="Сообщение" data-error="Ошибка" class="form__input"></textarea>
+								</div>
+								<div class="form__row">
+									<button type="submit" class="form__button trnt-btn">Задать вопрос</button>
+									<div class="form__checkbox">
+										<label class="checkbox">
+											<input data-error="Ошибка" class="checkbox__input" required type="checkbox" checked value="1" name="form[]">
+											<span class="checkbox__text"><span>Я даю свое согласие на <a class="js_popup-link" href="#consent">обработку персональных данных</a></span></span>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Спасибо"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		@@include('_breadcrumbs.html',{})
+		<div class="_container main-title">Спасибо за заказ!</div>
+		<section class="thanks _container">
+			<div class="thanks__image"><img src="img/thanks.png" alt=""></div>
+			<div class="thanks__text"><span class="thanks__text-span"> Ваш заказ успешно оформлен! Номер заказа NNNN </span> <span class="thanks__text-span"> Вы можете следить за выполнением заказа в <a href="#cabinet" class="thanks__text-link js_popup-link">Личном кабинете</a> </span></div>
+			<a href="index.html" class="thanks__btn trnt-btn">Вернуться на главную</a>
+		</section>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

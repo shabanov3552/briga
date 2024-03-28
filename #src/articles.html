@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Статьи"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		@@include('_breadcrumbs.html',{})
+		<section class="articles _container">
+			<div class="articles__title main-title">Статьи</div>
+			<div class="articles__wrapper">
+				<div class="articles__content">
+					<div class="articles__item">
+						<a href="" class="article-preview">
+							<div class="article-preview__image js_ibg">
+								<img loading="lazy" src="img/pictures/article_1.png" alt="">
+							</div>
+							<div class="article-preview__content">
+								<div class="article-preview__header">
+									<div class="article-preview__name">Спецобувь Safety Jogger – рабочая обувь высокого качества</div>
+									<div class="article-preview__labels">
+										<div class="article-preview__label">Обувь</div>
+										<div class="article-preview__label">Обзоры</div>
+									</div>
+								</div>
+								<div class="article-preview__text">Материал верха рабочей обуви Safety Jogger – это гладкая кожа и нубук, кордура (cordura) и современные текстильные материалы. Материалом подошвы является высококачественный полиуретан, термопилиуретан, нитрил.</div>
+							</div>
+						</a>
+					</div>
+					<div class="articles__item">
+						<a href="" class="article-preview">
+							<div class="article-preview__image js_ibg">
+								<img loading="lazy" src="img/pictures/article_2.png" alt="">
+							</div>
+							<div class="article-preview__content">
+								<div class="article-preview__header">
+									<div class="article-preview__name">Выбираем влагозащитный плащ</div>
+									<div class="article-preview__labels">
+										<div class="article-preview__label">Обзоры</div>
+									</div>
+								</div>
+								<div class="article-preview__text">Люди, которые работают много не в стенах офисных зданий и торговых центрах часто попадают под дождь в теплые времена года. Заболевать часто из-за погодных условий мало кому добровольно хочется. Поэтому, чтобы обезопасить себя необходим влагозащитный плащ. Рассмотрим, какие варианты существуют и какой вид предпочтительнее.</div>
+							</div>
+						</a>
+					</div>
+					<div class="articles__item">
+						<a href="" class="article-preview">
+							<div class="article-preview__image js_ibg">
+								<img loading="lazy" src="img/pictures/article_3.png" alt="">
+							</div>
+							<div class="article-preview__content">
+								<div class="article-preview__header">
+									<div class="article-preview__name">Правила ухода за спецодеждой</div>
+									<div class="article-preview__labels">
+										<div class="article-preview__label">Познавательно</div>
+									</div>
+								</div>
+								<div class="article-preview__text">Своевременный и правильный уход за спецодеждой, спецобувью и СИЗ позволяет не только сохранить внешний вид и защитные свойства изделий в течение всего периода эксплуатации, но и существенно продлить срок их службы. Стирку и чистку спецодежды следует производить в соответствии с правилами по уходу, обозначенными символами на внутреннем ярлыке изделия.</div>
+							</div>
+						</a>
+					</div>
+					<div class="articles__item">
+						<a href="" class="article-preview">
+							<div class="article-preview__image js_ibg">
+								<img loading="lazy" src="img/pictures/article_4.png" alt="">
+							</div>
+							<div class="article-preview__content">
+								<div class="article-preview__header">
+									<div class="article-preview__name">Новинка! Летняя спецодежда для защиты от ОПЗ и МВ</div>
+									<div class="article-preview__labels">
+										<div class="article-preview__label">Обзоры</div>
+									</div>
+								</div>
+								<div class="article-preview__text">Новый легкий костюм iForm «Эдванс» – это коллекция спецодежды премиального сегмента, которая предлагается отдельными предметами (куртка, брюки и полукомбинезон). Как показывает практика, «верх» и «низ» по-разному изнашиваются, по-разному комбинируются с другой сезонной одеждой,а также людям с нестандартной фигурой легче подбирать одежду.</div>
+							</div>
+						</a>
+					</div>
+					@@include('_pagging.html',{})
+				</div>
+				<div class="articles__sidebar">
+					<div class="category">
+						<div class="category__col">
+							<a href="" class="category__item _active">Обувь</a>
+							<a href="" class="category__item">Одежда</a>
+							<a href="" class="category__item">Обзоры</a>
+							<a href="" class="category__item">Познавательно</a>
+							<a href="" class="category__item">Важно знать</a>
+							<a href="" class="category__item">Истории</a>
+							<a href="" class="category__item">От директора</a>
+							<a href="" class="category__item">Объявления</a>
+							<a href="" class="category__item">Скидки и акции</a>
+							<a href="" class="category__item">Фоточки</a>
+							<a href="" class="category__item">Анекдоты</a>
+							<a href="" class="category__item">Выбери уже</a>
+							<a href="" class="category__item">Некрологи</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

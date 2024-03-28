@@ -1,0 +1,125 @@
+@page {
+   margin: 0px 0px 0px 0px;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.table-main {
+   width: 100%;
+   font-family: 'Montserrat';
+   /* background-image: url('<?= $urlServer ?>/kp_from_basket_test/img/page__bg.png'); */
+   background-image: url('img/page__bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom right;
+}
+
+.table-main__footer {
+   margin-top: 40px;
+   padding: 0 40px;
+}
+
+.table-main__footer-link {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   color: #76C000;
+   display: block;
+   margin-bottom: 7px;
+}
+
+.table-main__footer-text {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+   color: #3F3F3F;
+   margin-bottom: 5px;
+}
+
+.table-main__bottom-band {
+   width: 100%;
+   background: #A5FF14;
+   height: 11px;
+}
+
+.table-images-wrapper {
+   /* background-image: url('<?= $urlServer ?>/kp_from_basket_test/img/page__left-bg.png'); */
+   background-image: url('img/page__left-bg.png');
+   /* background-size: 80% 60%; */
+   background-repeat: no-repeat;
+   background-position: top left;
+   width: 150mm;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 0px 10px 10px 0;
+}
+
+.table-images {
+   background: #FFFFFF;
+   border: 1px solid #979797;
+   border-radius: 10px;
+   margin-left: 21px;
+   margin-right: -40px;
+   overflow: hidden;
+}
+
+.table-images__row td {
+   width: 50%;
+}
+
+.table-images__item img {
+   height: 100%;
+   width: 100%;
+}
+
+.table-right {}
+
+.table-header {}
+
+.table-header__logo {}
+
+.table-header__contacts a {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   text-align: right;
+   color: #3F3F3F;
+   display: block;
+   width: 140px;
+}
+
+.table-header__link {}
+
+.table-header__grn-block {
+   width: 12px;
+   height: 60px;
+   background: #A5FF14;
+}
+
+.table-sizes {}
+
+.table-sizes__headline {}
+
+.table-sizes__inner {}
+
+.table-sizes__count {}
+
+.table-total {}
+
+.table-total__inner {}
+
+.table-total__text {}
+
+.table-total__count {}
+
+.table-spec {}
+
+.table-spec__title {}
+
+.table-spec__list {}
+
+.table-spec__item {}

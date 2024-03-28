@@ -1,0 +1,67 @@
+Модалки
+http://localhost:3000/index.html#cabinet - Авторизация
+http://localhost:3000/index.html#register - Регистрация
+http://localhost:3000/index.html#forgot-pass - Восстановление пароля
+http://localhost:3000/index.html#chang-pass - Смена пароля
+http://localhost:3000/index.html#chang-data - Изменение данных
+http://localhost:3000/index.html#chang-data-business - Изменение данных юрик
+http://localhost:3000/index.html#add-address - Добавить адрес
+http://localhost:3000/index.html#chang-address - Изменить адрес
+http://localhost:3000/index.html#order-product - Заказать товар
+http://localhost:3000/index.html#bye-click - Купить в 1 клик
+http://localhost:3000/index.html#callback - Обратная связь
+http://localhost:3000/index.html#basket - Корзина
+http://localhost:3000/index.html#basket-empty  - Корзина пустая
+http://localhost:3000/index.html#search - Поиск
+http://localhost:3000/index.html#consent - Согласие
+http://localhost:3000/index.html#policy - Политика
+
+localhost 
+http://localhost:3000/404.html  - 404-ая
+http://localhost:3000/about.html  - О компании
+http://localhost:3000/article-item.html  - Статья
+http://localhost:3000/articles.html  - Статьи
+http://localhost:3000/cabinet.html  - Личный кабинет
+http://localhost:3000/case.html  - Кейс
+http://localhost:3000/catalog.html  - Каталог
+http://localhost:3000/contacts.html  - Контакты
+http://localhost:3000/delivery.html  - Доставка
+http://localhost:3000/faq.html  - FAQ
+http://localhost:3000/favorites.html  - Избранное
+http://localhost:3000/favorites-empty.html  - Избранное пустая
+http://localhost:3000/index.html  - Главная
+http://localhost:3000/our-works.html  - Наши работы
+http://localhost:3000/product.html  - Деталка
+http://localhost:3000/search-result-empty.html  - Выдача пустая
+http://localhost:3000/search-result.html  - Выдача
+http://localhost:3000/service.html  - Услгуа
+http://localhost:3000/services.html  - Услуги
+http://localhost:3000/thanks.html  - Спасибо
+
+
+
+
+
+on Github 
+https://shabanov3552.github.io/brigadir/brigadir/
+
+https://shabanov3552.github.io/brigadir/404.html  - 404-ая
+https://shabanov3552.github.io/brigadir/about.html  - О компании
+https://shabanov3552.github.io/brigadir/article-item.html  - Статья
+https://shabanov3552.github.io/brigadir/articles.html  - Статьи
+https://shabanov3552.github.io/brigadir/cabinet.html  - Личный кабинет
+https://shabanov3552.github.io/brigadir/case.html  - Кейс
+https://shabanov3552.github.io/brigadir/catalog.html  - Каталог
+https://shabanov3552.github.io/brigadir/contacts.html  - Контакты
+https://shabanov3552.github.io/brigadir/delivery.html  - Доставка
+https://shabanov3552.github.io/brigadir/faq.html  - FAQ
+https://shabanov3552.github.io/brigadir/favorites.html  - Избранное
+https://shabanov3552.github.io/brigadir/favorites-empty.html  - Избранное пустая
+https://shabanov3552.github.io/brigadir/index.html  - Главная
+https://shabanov3552.github.io/brigadir/our-works.html  - Наши работы
+https://shabanov3552.github.io/brigadir/product.html  - Деталка
+https://shabanov3552.github.io/brigadir/search-result-empty.html  - Выдача пустая
+https://shabanov3552.github.io/brigadir/search-result.html  - Выдача
+https://shabanov3552.github.io/brigadir/service.html  - Услгуа
+https://shabanov3552.github.io/brigadir/services.html  - Услуги
+https://shabanov3552.github.io/brigadir/thanks.html  - Спасибо

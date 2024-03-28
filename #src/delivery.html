@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Доставка и оплата"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		@@include('_breadcrumbs.html',{})
+		<section class="del _container">
+			<div class="del__title">Доставка и оплата</div>
+			<div class="del__subtitle">Способы доставки</div>
+			<div class="del__row">
+				<div class="del__name">Курьером по Красноярску и Красноярскому краю</div>
+				<div class="del__text">Квантовое состояние ускоряет эксимер. Неустойчивость, как известно, быстро разивается, если фотон концентрирует луч. Линза катастрофично ускоряет солитон.</div>
+			</div>
+			<div class="del__row">
+				<div class="del__name">Самовывоз в Красноярске</div>
+				<div class="del__desc">
+					<div class="del__text">Силовое поле растягивает электрон. Эксимер, в согласии с традиционными представлениями, квантуем.</div>
+					<a href="#map-block" class="del__link">Смотреть на карте</a>
+				</div>
+			</div>
+			<div class="del__row">
+				<div class="del__name">Транспортной компанией по России</div>
+				<div class="del__desc">
+					<div class="del__text">Как легко получить из самых общих соображений, кристаллическая решетка заряжает сверхпроводник.</div>
+				</div>
+			</div>
+			<div id="map-block" class="del__map" data-spollers>
+				<a href="" class="del__link _active" data-spoller></a>
+				<div class="del__map-wrapper">
+					<div id="map"></div>
+				</div>
+			</div>
+			<div class="del__subtitle">Способы оплаты </div>
+			<div class="del__row">
+				<div class="del__name">Счет на оплату</div>
+				<div class="del__text">Квантовое состояние ускоряет эксимер. Неустойчивость, как известно, быстро разивается, если фотон концентрирует луч. Линза катастрофично ускоряет солитон.</div>
+			</div>
+			<div class="del__row">
+				<div class="del__name">Оплата при получении</div>
+				<div class="del__text">Силовое поле растягивает электрон. Эксимер, в согласии с традиционными представлениями, квантуем.</div>
+			</div>
+			<div class="del__row">
+				<div class="del__name">Банковской картой на сайте</div>
+				<div class="del__text">Как легко получить из самых общих соображений, кристаллическая решетка заряжает сверхпроводник.</div>
+			</div>
+		</section>
+		<section class="index-callback _container">
+			<div class="callback">
+				<div class="callback__row">
+					<div class="callback__col">
+						<div class="callback__text">Есть вопросы по доставке или оплате? Оставьте контактные данные и мы проконсультируем вас.</div>
+						<div class="callback__bg"></div>
+					</div>
+					<div class="callback__col">
+						<div class="callback__form">
+							<form action="" class="form">
+								<div class="form__line">
+									<input type="text" name="form[]" data-error="Введите имя" data-value="Ваше имя" class="form__input">
+								</div>
+								<div class="form__line">
+									<input type="text" name="form[]" data-error="Введите телефон" data-value="Контактный телефон" class="form__input js_phone">
+								</div>
+								<div class="form__row">
+									<button type="submit" class="form__button trnt-btn">Задать вопрос</button>
+									<div class="form__checkbox">
+										<label class="checkbox">
+											<input data-error="Ошибка" class="checkbox__input" required type="checkbox" checked value="1" name="form[]">
+											<span class="checkbox__text"><span>Я даю свое согласие на <a class="js_popup-link" href="#consent">обработку персональных данных</a></span></span>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

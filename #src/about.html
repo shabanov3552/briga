@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"О компании"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		@@include('_breadcrumbs.html',{})
+
+		<div class="first-screen">
+			<div class="first-screen__container _container">
+				<div class="first-screen__content">
+					<div class="first-screen__title">Компания «Бригадир» – крупнейший производитель спецодежды в Сибири</div>
+					<div class="first-screen__row">
+						<div class="first-screen__subtitle">Гибкий подход к каждому клиенту, пошив и готовые решения, без минимальной партии заказа и доставкой в любую точку страны</div>
+						<div class="first-screen__subtitle">Локализация производственных мощностей непосредственно на территории присутствия.</div>
+					</div>
+					<div class="first-screen__bottom">
+						<a href="#getConsultation" class="first-screen__green-btn green-btn js_popup-link">Получить консультацию</a>
+						<a href="#video" class="first-screen__grey-btn dark-grey-btn js_popup-link">
+							<img src="img/lend/play-btn.png" alt="">
+							<span>Смотреть видео о нас</span>
+						</a>
+					</div>
+				</div>
+				<div class="first-screen__video-bg">
+					<video src="videos/video-bg.mp4" autoplay loop muted preload="auto" pip="false"></video>
+				</div>
+			</div>
+		</div>
+
+		<section class="catalog">
+			<div class="catalog__header _container">
+				<div class="catalog__title">В одном месте<br> и по доступным ценам </div>
+				<div class="catalog__subtitle">вы можете приобрести спецобувь,<br>спецодежду, СИЗы и сопутствующие товары.</div>
+			</div>
+			<div class="catalog__row">
+				<a href="" class="catalog__card">
+					<div class="catalog__card-name">Спецодежда</div>
+					<div class="catalog__image-ibg"><img src="img/lend/card-img_1.png" alt=""></div>
+				</a>
+				<a href="" class="catalog__card">
+					<div class="catalog__card-name">Спецобувь</div>
+					<div class="catalog__image-ibg"><img src="img/lend/card-img_2.png" alt=""></div>
+				</a>
+				<a href class="catalog__card">
+					<div class="catalog__card-name">Средства индивидуальной защиты (СИЗ)</div>
+					<div class="catalog__image-ibg"><img src="img/lend/card-img_3.png" alt=""></div>
+				</a>
+				<a href class="catalog__card">
+					<div class="catalog__card-name">Прочие товары</div>
+					<div class="catalog__image-ibg"><img src="img/lend/card-img_4.png" alt=""></div>
+				</a>
+			</div>
+		</section>
+
+		<section class="works _container">
+			<div class="works__header">
+				<div class="works__title">Примеры работ</div>
+				<div class="works__slider-nav">
+					<button type="button" class="swiper-button-prev">
+						<img src="img/lend/left-arrow.svg" alt="">
+						<img src="img/lend/left-arrow_grey.svg" alt="">
+					</button>
+					<div class="swiper-pagination works__slider-counter"></div>
+					<button type="button" class="swiper-button-next">
+						<img src="img/lend/right-arrow.svg" alt="">
+						<img src="img/lend/right-arrow_grey.svg" alt="">
+					</button>
+				</div>
+			</div>
+			<div class="works__slider-wrapper">
+				<!-- Оболочка слайдера -->
+				<div class="works__slider swiper-container">
+					<!-- Двигающееся часть слайдера -->
+					<div class="works__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_1.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_1.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_2.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_2.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_3.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_3.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_4.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_4.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_5.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_5.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_6.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_6.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_1.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_1.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_2.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_2.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_3.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_3.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_4.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_4.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_5.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_5.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_6.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_6.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_1.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_1.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_2.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_2.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_3.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_3.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_4.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_4.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_5.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_5.jpg">
+							</div>
+						</div>
+						<div class="works__slide swiper-slide">
+							<div data-fancybox="works-gallery" data-src="img/lend/works_6.jpg" class="works__slide-image ">
+								<img loading="lazy" src="img/lend/works_6.jpg">
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="works__desc-slider swiper-container">
+					<div class="works__desc-wrapper swiper-wrapper">
+						<div class="works__desc-slide swiper-slide">
+							<div class="works__name">1Костюм зимний сигнальный "Фотон" с п/к </div>
+							<div class="works__desc">Костюм с притачной утепляющей подкладкой</div>
+							<div class="works__advantages-row">
+								<div class="works__adv-item"><img src="img/lend/adv_1.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_2.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_3.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_4.svg" alt=""></div>
+							</div>
+							<div class="works__price">
+								<div class="works__price-text">Цена</div>
+								<div class="works__price-num">от 4400 ₽</div>
+							</div>
+						</div>
+						<div class="works__desc-slide swiper-slide">
+							<div class="works__name">2Костюм зимний "Бригадир" цв. серый с красной отделкой</div>
+							<div class="works__desc">Костюм с притачной утепляющей подкладкой и жилетом.
+
+								Куртка:
+
+								потайная центральная застежка на двухзамковую молнию с ветрозащитным клапаном на липучке. Закрытая молния исключает контакт фурнитуры с оборудованием;
+
+								множество карманов для удобства эксплуатации:
+
+								-нагрудные накладные с клапаном на липучке;
+
+								-левый с отделением для бейджа;
+
+								-нижние накладные с клапаном;
+
+								-левый внутренний карман на липучке.</div>
+							<div class="works__advantages-row">
+								<div class="works__adv-item"><img src="img/lend/adv_1.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_2.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_3.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_4.svg" alt=""></div>
+							</div>
+							<div class="works__price">
+								<div class="works__price-text">Цена</div>
+								<div class="works__price-num">от 4400 ₽</div>
+							</div>
+						</div>
+						<div class="works__desc-slide swiper-slide">
+							<div class="works__name">3Костюм зимний сигнальный "Фотон" с п/к </div>
+							<div class="works__desc">Костюм с притачной утепляющей подкладкой</div>
+							<div class="works__advantages-row">
+								<div class="works__adv-item"><img src="img/lend/adv_1.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_2.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_3.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_4.svg" alt=""></div>
+							</div>
+							<div class="works__price">
+								<div class="works__price-text">Цена</div>
+								<div class="works__price-num">от 4400 ₽</div>
+							</div>
+						</div>
+						<div class="works__desc-slide swiper-slide">
+							<div class="works__name">4Костюм зимний "Бригадир" цв. серый с красной отделкой</div>
+							<div class="works__desc">Костюм с притачной утепляющей подкладкой и жилетом.
+
+								Куртка:
+
+								потайная центральная застежка на двухзамковую молнию с ветрозащитным клапаном на липучке. Закрытая молния исключает контакт фурнитуры с оборудованием;
+
+								множество карманов для удобства эксплуатации:
+
+								-нагрудные накладные с клапаном на липучке;
+
+								-левый с отделением для бейджа;
+
+								-нижние накладные с клапаном;
+
+								-левый внутренний карман на липучке.</div>
+							<div class="works__advantages-row">
+								<div class="works__adv-item"><img src="img/lend/adv_1.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_2.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_3.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_4.svg" alt=""></div>
+							</div>
+							<div class="works__price">
+								<div class="works__price-text">Цена</div>
+								<div class="works__price-num">от 4400 ₽</div>
+							</div>
+						</div>
+						<div class="works__desc-slide swiper-slide">
+							<div class="works__name">5Костюм зимний сигнальный "Фотон" с п/к </div>
+							<div class="works__desc">Костюм с притачной утепляющей подкладкой</div>
+							<div class="works__advantages-row">
+								<div class="works__adv-item"><img src="img/lend/adv_1.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_2.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_3.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_4.svg" alt=""></div>
+							</div>
+							<div class="works__price">
+								<div class="works__price-text">Цена</div>
+								<div class="works__price-num">от 4400 ₽</div>
+							</div>
+						</div>
+						<div class="works__desc-slide swiper-slide">
+							<div class="works__name">6Костюм зимний "Бригадир" цв. серый с красной отделкой</div>
+							<div class="works__desc">Костюм с притачной утепляющей подкладкой и жилетом.
+
+								Куртка:
+
+								потайная центральная застежка на двухзамковую молнию с ветрозащитным клапаном на липучке. Закрытая молния исключает контакт фурнитуры с оборудованием;
+
+								множество карманов для удобства эксплуатации:
+
+								-нагрудные накладные с клапаном на липучке;
+
+								-левый с отделением для бейджа;
+
+								-нижние накладные с клапаном;
+
+								-левый внутренний карман на липучке.</div>
+							<div class="works__advantages-row">
+								<div class="works__adv-item"><img src="img/lend/adv_1.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_2.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_3.svg" alt=""></div>
+								<div class="works__adv-item"><img src="img/lend/adv_4.svg" alt=""></div>
+							</div>
+							<div class="works__price">
+								<div class="works__price-text">Цена</div>
+								<div class="works__price-num">от 4400 ₽</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="delivery">
+			<div class="delivery__content _container">
+				<div class="delivery__title">
+					Доставляем заказы
+					по всей России
+				</div>
+				<div class="delivery__row">
+					<div class="delivery__col">
+						<div class="delivery__item">
+							<div class="delivery__green-text">15</div>
+							<div class="delivery__decs">Лет на рынке</div>
+						</div>
+						<div class="delivery__item">
+							<div class="delivery__green-text">95%</div>
+							<div class="delivery__decs">продукции в наличии
+								на складе</div>
+						</div>
+					</div>
+					<div class="delivery__col">
+						<div class="delivery__item">
+							<div class="delivery__green-text">бесплатная доставка</div>
+							<div class="delivery__decs">при заказе от 20 000 ₽</div>
+						</div>
+						<div class="delivery__item">
+							<div class="delivery__green-text">скидки и отсрочки</div>
+							<div class="delivery__decs">для постоянных клиентов</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="delivery__map">
+				<img src="img/lend/map.png" alt="">
+				<div class="delivery__sky delivery__sky_left">
+					<img src="img/lend/sky.png" alt="">
+				</div>
+				<div class="delivery__sky delivery__sky_right">
+					<img src="img/lend/sky.svg" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="services _container">
+			<div class="services__header">
+				<div class="services__title">Сервис</div>
+				<div class="services__subtitle">Для нас важно не только <b>качество</b> выпускаемой продукции, но и <b>комплексный сервис</b> для клиента, нацеленный на <b>долгосрочные отношения</b>. Всем нашим клиентам мы предлагаем широкий спектр услуг, таких как: </div>
+
+			</div>
+			<div class="services__items">
+				<a href="" class="services__item">
+					<span>Изготовление одежды по <b>спецзаказу</b></span>
+					<img src="img/lend/services_1.jpg" alt="">
+				</a>
+				<a href="" class="services__item">
+					<span>Наличие на складе
+						линейки <b>нестандартных</b>
+						размеров</span>
+					<img src="img/lend/services_2.jpg" alt="">
+				</a>
+				<a href="" class="services__item">
+					<span>Разработка фирменного
+						<b>стиля</b></span>
+					<img src="img/lend/services_3.jpg" alt="">
+				</a>
+				<a href="" class="services__item">
+					<span>Бесплатная <b>доставка</b> по России (при заказе от 20000 рублей)</span>
+					<img src="img/lend/services_4.jpg" alt="">
+				</a>
+				<a href="" class="services__item">
+					<span><b>Консультации</b> по вопросам
+						охраны труда</span>
+					<img src="img/lend/services_5.jpg" alt="">
+				</a>
+				<a href="" class="services__item">
+					<span>Нанесение
+						<b>логотипов</b></span>
+					<img src="img/lend/services_6.jpg" alt="">
+				</a>
+			</div>
+		</section>
+
+		<section class="photo-slider">
+			<div class="photo-slider__header">
+				<button type="button" class="swiper-button-prev">
+					<img src="img/lend/left-arrow.svg" alt="">
+					<img src="img/lend/left-arrow_grey.svg" alt="">
+				</button>
+				<div class="swiper-pagination"></div>
+				<button type="button" class="swiper-button-next">
+					<img src="img/lend/right-arrow.svg" alt="">
+					<img src="img/lend/right-arrow_grey.svg" alt="">
+				</button>
+			</div>
+			<div class="photo-slider__slider swiper-container">
+				<div class="photo-slider__wrapper swiper-wrapper">
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_1.jpg"><img src="img/lend/photo_1.jpg" alt=""></div>
+					</div>
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_2.jpg"><img src="img/lend/photo_2.jpg" alt=""></div>
+					</div>
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_3.jpg"><img src="img/lend/photo_3.jpg" alt=""></div>
+					</div>
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_1.jpg"><img src="img/lend/photo_1.jpg" alt=""></div>
+					</div>
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_2.jpg"><img src="img/lend/photo_2.jpg" alt=""></div>
+					</div>
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_3.jpg"><img src="img/lend/photo_3.jpg" alt=""></div>
+					</div>
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_1.jpg"><img src="img/lend/photo_1.jpg" alt=""></div>
+					</div>
+					<div class="photo-slider__slide swiper-slide">
+						<div class="photo-slider__image" data-fancybox="gallery" data-src="img/lend/photo_2.jpg"><img src="img/lend/photo_2.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="callback callback-lend _container">
+			<div class="callback__row">
+				<div class="callback__col">
+					<div class="callback__desc">
+						<div class="callback__text">Хотите лично ознакомиться с технологическими процессами нашего производства?</div>
+						<div class="callback__sm-text">Запишитесь на экскурсию</div>
+					</div>
+					<div class="callback__human"><img src="img/lend/form-human.png" alt=""></div>
+				</div>
+				<div class="callback__col">
+					<div class="callback__form">
+						<form action="" class="form">
+							<div class="form__line">
+								<input type="text" name="form[]" data-error="Ошибка" data-value="Ваше имя" class="form__input">
+							</div>
+							<div class="form__line">
+								<input required data-parsley-required-message="Введите телефон" type="text" name="form[]" data-value="Контактный телефон" class="form__input js_phone">
+							</div>
+							<div class="form__line">
+								<textarea autocomplete="off" name="form[]" data-value="Комментарий" data-error="Ошибка" class="form__txta"></textarea>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__button green-btn">Записаться на экскурсию</button>
+								<div class="form__checkbox">
+									<label class="checkbox">
+										<input data-error="Ошибка" class="checkbox__input" required type="checkbox" checked value="1" name="form[]">
+										<span class="checkbox__text"><span>Я даю свое согласие на <a class="js_popup-link" href="#consent">обработку персональных данных</a></span></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="advantages__title _container">Преимущества</div>
+			<div class="advantages__row _container">
+				<div class="advantages__card">
+					<div class="advantages__top">
+						<div class="advantages__num">01</div>
+						<div class="advantages__icon"><img src="img/lend/advantages_1.svg" alt=""></div>
+					</div>
+					<div class="advantages__text">Вся продукция, производимая ООО ТД «Бригадир» имеет <span>заключение МинПромТорг</span>, о подтверждении производства промышленной продукции на территории Российской Федерации. Что позволяет нашим клиентам <span>возмещать из Фонда</span> Социального Страхования(ФСС) расходы на приобретение спецодежды.</div>
+				</div>
+				<div class="advantages__card">
+					<div class="advantages__top">
+						<div class="advantages__num">02</div>
+						<div class="advantages__icon"><img src="img/lend/advantages_2.svg" alt=""></div>
+					</div>
+					<div class="advantages__text">Наши готовые решения по крою отточены опытным путем, при разработке спецодежды строго соблюдаются нормы ГОСТ и <span>требования по охране труда</span>. Каждый этап находится под <span>контролем ОТК</span>, а для производства используются только высококачественные материалы.</div>
+				</div>
+				<div class="advantages__card">
+					<div class="advantages__top">
+						<div class="advantages__num">03</div>
+						<div class="advantages__icon"><img src="img/lend/advantages_3.svg" alt=""></div>
+					</div>
+					<div class="advantages__text">У нас <span>полный цикл</span> собственного производства: дизайн, пошив, нанесение логотипов, вышивки. При этом <span>производство безотходное</span>, с заботой об окружающей среде: обрезки утеплителя, флиса, мембраны - мы передаем для вторичного производства.</div>
+				</div>
+				<div class="advantages__card">
+					<div class="advantages__top">
+						<div class="advantages__num">04</div>
+						<div class="advantages__icon"><img src="img/lend/advantages_4.svg" alt=""></div>
+					</div>
+					<div class="advantages__text"><span>Большой выбор</span> моделей и вариантов расцветки. Предоставляем <span>тестовые образцы</span> моделей, если это необходимо. Также можем выполнить пошив спецодежды по <span>индивидуальному заказу</span>. Минимальной партии на пошив нет.</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="trust _container">
+			<div class="trust__header">
+				<div class="trust__title">Нам доверяют</div>
+				<div class="trust__text">безопасность персонала
+					и охрану труда</div>
+			</div>
+			<div class="trust__wrapper">
+				<div class="trust__item"><img src="img/lend/company_1.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_2.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_3.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_4.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_5.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_6.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_7.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_8.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_9.jpg" alt=""></div>
+				<div class="trust__item"><img src="img/lend/company_10.jpg" alt=""></div>
+			</div>
+		</section>
+
+
+		<!-- <div class="about">
+			<section class="index-about">
+				<div class="index-about__container _container">
+					<div class="index-about__row">
+						<div class="index-about__col">
+							<div class="index-about__title">О компании</div>
+							<div class="index-about__desc">Компания «Бригадир» – крупнейший производитель спецодежды в Красноярском крае, с локализацией производственных мощностей непосредственно на территории присутствия</div>
+						</div>
+						<div class="index-about__col">
+							<div class="index-about__regalia">
+								<div class="index-about__regalia-num">15</div>
+								<div class="index-about__regalia-text">Лет на рынке</div>
+							</div>
+							<div class="index-about__regalia">
+								<div class="index-about__regalia-num">100 000+</div>
+								<div class="index-about__regalia-text">швейных изделий в год</div>
+							</div>
+							<div class="index-about__regalia">
+								<div class="index-about__regalia-num">5300+</div>
+								<div class="index-about__regalia-text">клиентов</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="advantages">
+			<div class="advantages__first-block _container">
+				<div class="advantages__row">
+					<div class="advantages__decs">
+						<div class="advantages__title">Возмещение расходов</div>
+						<div class="advantages__text">Вся продукция, производимая под ТМ «Бригадир» имеет заключение МинПромТорг, о подтверждении производства промышленной продукции на территории Российской Федерации. Что позволяет нашим клиентам возмещать из Фонда Социального Страхования(ФСС) расходы на приобретение спецодежды.</div>
+					</div>
+					<div class="advantages__image">
+						<img loading="lazy" src="img/pictures/sertif_1.png" alt="">
+					</div>
+				</div>
+				<div class="advantages__row">
+					<div class="advantages__big-image">
+						<img loading="lazy" src="img/pictures/advantages_1.jpg" alt="">
+					</div>
+					<div class="advantages__decs">
+						<div class="advantages__title">Собственное производство</div>
+						<div class="advantages__text">Наш собственный производственный потенциал оснащен самым современным оборудованием. На швейных фабриках работа выполняется на высокопроизводительных японских швейных машинах, проектирование одежды осуществляется с помощью программы автоматизированного проектирования и конструирования лекал и раскладки. Всё это в сочетании с профессионализмом сотрудников дает нам широкие возможности для реализации новых проектов.</div>
+					</div>
+				</div>
+				<div class="advantages__title advantages__title_right">Качество</div>
+			</div>
+			<div class="advantages__second-block">
+				<div class="advantages__row _container">
+					<div class="advantages__col">
+						<div class="advantages__num">01</div>
+						<div class="advantages__text">При разработке спецодежды строго соблюдаются нормы ГОСТ и требования по охране труда</div>
+						<div class="advantages__img-done">
+							<img src="img/svg/check-mark.svg" alt="">
+						</div>
+					</div>
+					<div class="advantages__col">
+						<div class="advantages__num">02</div>
+						<div class="advantages__text">Новые модели перед выводом на рынок проходят испытания</div>
+						<div class="advantages__img-done">
+							<img src="img/svg/check-mark.svg" alt="">
+						</div>
+					</div>
+					<div class="advantages__col">
+						<div class="advantages__num">03</div>
+						<div class="advantages__text">При пошиве одежды каждый этап находится под контролем ОТК</div>
+						<div class="advantages__img-done">
+							<img src="img/svg/check-mark.svg" alt="">
+						</div>
+					</div>
+					<div class="advantages__col">
+						<div class="advantages__num">04</div>
+						<div class="advantages__text">Спецодежда отшивается из высококачественных материалов</div>
+						<div class="advantages__img-done">
+							<img src="img/svg/check-mark.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="advantages__third-block _container">
+				<div class="advantages__title">Сервис</div>
+				<div class="advantages__row">
+					<div class="advantages__text">Для нас важно не только качество выпускаемой продукции, но и комплексный сервис для клиента, нацеленный на долгосрочные отношения. Всем нашим клиентам мы предлагаем широкий спектр услуг, таких как: </div>
+					<div class="advantages__links">
+						<a href="" class="advantages__link">Изготовление одежды по спецзаказу</a>
+						<a href="" class="advantages__link">Наличие на складе линейки нестандартных размеров</a>
+						<a href="" class="advantages__link">Разработка фирменного стиля</a>
+						<a href="" class="advantages__link">Нанесение логотипов</a>
+						<a href="" class="advantages__link">Безвозмездная доставка по России (при заказе от 20000 рублей)</a>
+						<a href="" class="advantages__link">Консультации по вопросам охраны труда</a>
+					</div>
+				</div>
+				<div class="video-block">
+					<div class="video-block__play">
+						<a href="#video" data-video="cAKbh41UYOE" class="video-block__play-btn js_popup-link">
+							<img src="img/svg/play_btn.svg" alt="">
+							Смотреть видео о нас
+						</a>
+					</div>
+					<img class="video-block__bg" loading="lazy" src="img/video-prev.png" alt="">
+				</div>
+				<div class="advantages__gallery js_gallery">
+					<a href="img/about/01.png" class="advantages__gallery-photo"><img loading="lazy" src="img/about/01.png" alt=""></a>
+					<a href="img/about/02.png" class="advantages__gallery-photo"><img loading="lazy" src="img/about/02.png" alt=""></a>
+					<a href="img/about/03.png" class="advantages__gallery-photo"><img loading="lazy" src="img/about/03.png" alt=""></a>
+					<a href="img/about/04.png" class="advantages__gallery-photo"><img loading="lazy" src="img/about/04.png" alt=""></a>
+					<a href="img/about/05.png" class="advantages__gallery-photo"><img loading="lazy" src="img/about/05.png" alt=""></a>
+					<a href="img/about/06.png" class="advantages__gallery-photo"><img loading="lazy" src="img/about/06.png" alt=""></a>
+				</div>
+				<div class="certificates js_gallery">
+					<div class="certificates__row">
+						<div class="certificates__item">
+							<div class="certificates__image">
+								<a href="img/pictures/sertif_1.png"><img loading="lazy" src="img/pictures/sertif_1.png" alt=""></a>
+							</div>
+							<div class="certificates__text">
+								Сертификат НАКС №АЦСТ-27-01337
+							</div>
+						</div>
+						<div class="certificates__item">
+							<div class="certificates__image">
+								<a href="img/pictures/sertif_1.png"><img loading="lazy" src="img/pictures/sertif_1.png" alt=""></a>
+							</div>
+							<div class="certificates__text">
+								Сертификат НАКС №АЦСТ-27-01337
+							</div>
+						</div>
+						<div class="certificates__item">
+							<div class="certificates__image">
+								<a href="img/pictures/sertif_1.png"><img loading="lazy" src="img/pictures/sertif_1.png" alt=""></a>
+							</div>
+							<div class="certificates__text">
+								Сертификат НАКС №АЦСТ-27-01337
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div> -->
+
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
