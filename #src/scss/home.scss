@@ -1,19 +1,11 @@
 .index-about {
 	padding: 60px 0px 80px 0px;
-	// background: linear-gradient(180deg, #515151 40%, rgba(81, 81, 81, 0.0001) 100%) no-repeat,
-	// 	url(../img/map_bg.webp) no-repeat;
-	// background-size: 100% 57%, 1920px 1139px;
-	// background-position: 0px 0px, 70% bottom;
-
-	// background: linear-gradient(180deg, #3C3C3C 0%, rgba(61, 61, 61, 0.01) 100%) no-repeat, url(../img/map_bg.webp) no-repeat, linear-gradient(180deg, rgba(81, 81, 81, 0.01) 0%, #515151 100%) no-repeat;
-
 	background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 75%, rgb(81, 81, 81) 85%), url(../img/map_bg.webp) no-repeat;
 	background-position: 0 0, 100% 35%;
 
-	@media (min-width: 1921px) {
+	@media (min-width: 1920.98px) {
 		background-position: 0 0, center;
 		background-size: contain, contain;
-
 	}
 
 	@media (max-width: 1627.98px) {
@@ -25,28 +17,44 @@
 	}
 
 	@media (max-width: 1280.98px) {
-		background-position: 0 0, 61% 7%;
+		background-position: 0 0, 61% 40%;
 	}
 
 	@media (max-width: $md3+px) {
-		background-position: 0 0, 61% -100px;
+		background-position: 0 0, 61% 0%;
 	}
 
 	@media (max-width: $md4+px) {
-		background-position: 0 0, 61% -20px;
+		background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 65%, rgb(81, 81, 81) 75%), url(../img/map_bg.webp) no-repeat;
+		background-position: 0 0, -800px 40px;
+		background-size: auto, 1920px 1139px;
 	}
 
-	@media (max-width: 560px) {
-		background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 58%, rgb(81, 81, 81) 67%), url(../img/map_bg.webp) no-repeat;
-		background-position: 0 0, 61% -160px;
+	@media (max-width: 626.98px) {
+		background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 65%, rgb(81, 81, 81) 75%), url(../img/map_bg.webp) no-repeat;
+		background-position: 0 0, -830px 75px;
+		background-size: auto, 1920px 1139px;
 	}
 
-	@media (max-width: 400px) {
+	@media (max-width: 560.98px) {
+		background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgb(81, 81, 81) 68%), url(../img/map_bg.webp) no-repeat;
+		background-position: 0 0, 61% -25%;
+	}
+
+	@media (max-width: 558.98px) {
+		background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgb(81, 81, 81) 68%), url(../img/map_bg.webp) no-repeat;
+		background-position: 0 0, 61% -8%;
+	}
+
+	@media (max-width: 460.98px) {
+		background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgb(81, 81, 81) 68%), url(../img/map_bg.webp) no-repeat;
+		background-position: 0 0, 61% -5%;
+	}
+
+	@media (max-width: 399.98px) {
 		background: linear-gradient(180deg, rgb(60, 60, 60) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 55%, rgb(81, 81, 81) 60%), url(../img/map_bg.webp) no-repeat;
-		background-position: 0 0, 61% -160px;
+		background-position: 0 0, 61% -100px;
 	}
-
-
 
 	// .index-about__title
 
@@ -561,9 +569,7 @@
 
 
 .index-sale {
-
 	position: relative;
-
 
 	// .index-sale__nav
 
@@ -628,19 +634,19 @@
 		z-index: 3;
 	}
 
-
-
 	// .index-sale__slide
 
 	&__slide {
 		position: relative;
 		padding: 35px 40px;
 		padding-top: 14.3%;
+		padding-top: 205px;
 		width: 100%;
 
 		@media (max-width:$md1+px) {
 			padding: 25px 40px;
 			padding-top: 12%;
+			padding-top: 130px;
 		}
 
 		@media (max-width:$md3+px) {
@@ -665,10 +671,15 @@
 
 		@media (max-width:$md4+px) {
 			position: static;
+			height: 190px;
 
 			img {
 				position: static;
 			}
+		}
+
+		@media (max-width:399.98px) {
+			height: 100px;
 		}
 	}
 

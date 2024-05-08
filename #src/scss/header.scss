@@ -85,6 +85,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		margin: 6px 51px 0px 0px;
+		position: relative;
 
 		@media (max-width: $md2+px) {
 			margin: 15px 51px 0px 0px;
@@ -99,34 +100,33 @@
 		}
 
 		@media (max-width: $md4+px) {
-			width: 93px;
+			// width: 93px;
 		}
 	}
 
 	// .header__logo-svg
 
 	&__logo-svg {
-		height: 45px;
-		width: 295px;
-		margin: 0px 0px 5px 0px;
+		height: 111px;
+		width: 323px;
 
 		use {
 			fill: #fff;
 		}
 
 		@media (max-width: $md2+px) {
-			height: 31px;
+			height: 75px;
 			width: 215px;
 		}
 
-		@media (max-width: 1180px) {
-			width: 145px;
-			height: 21px;
+		@media (max-width: $md4+px) {
+			width: 174px;
+			height: 60px;
 		}
 
-		@media (max-width: $md4+px) {
-			width: 93px;
-			height: 13px;
+		@media (max-width: $md5+px) {
+			width: 115px;
+			height: 40px;
 		}
 	}
 
@@ -140,13 +140,26 @@
 		font-weight: 600;
 		padding: 2px 6px;
 		border-radius: 7px;
+		position: absolute;
+		top: 42px;
+		left: 21px;
 
 		@media (max-width: $md2+px) {
 			font-size: 16px;
+			top: 27px;
+			left: 13px;
 		}
 
-		@media (max-width: $md3+px) {
+		@media (max-width: $md4+px) {
 			font-size: 11px;
+			top: 22px;
+			left: 9px;
+		}
+
+		@media (max-width: $md5+px) {
+			font-size: 7px;
+			top: 14px;
+			left: 7px;
 		}
 	}
 
